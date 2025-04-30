@@ -382,3 +382,64 @@ footer {
 .social-icon i {
     margin-right: 8px;
 }
+
+/* Responsive for About Section */
+@media (max-width: 768px) {
+    #about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-text {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    #about img {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive for Navbar */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Responsive for Container */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Responsive for Skills Section */
+@media (max-width: 768px) {
+    .skill-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive for Contact Content Cards */
+@media (max-width: 768px) {
+    .content-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+

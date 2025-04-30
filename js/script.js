@@ -43,13 +43,13 @@ $(document).ready(function () {
             },
             {
                 icon: "fab fa-php",
-                skill_name: "PHP",
+                skill_name: "PHP(OOP)",
                 color_code: "#777bb3",
-                proficiency_level: 80
+                proficiency_level: 70
             },
             {
-                icon: "fas fa-puzzle-piece",
-                skill_name: "OOP",
+                icon: "fas fa-code",
+                skill_name: "Laravel",
                 color_code: "#555",
                 proficiency_level: 50
             },
@@ -178,21 +178,24 @@ $(document).ready(function () {
             project_title: "Online Blogging Application",
             description: "A blog (Short for Web log) is a type of website which has posts (or entries) appearing in reverse chronological order (the most recent post appears first). You can think of it as an online journal or diary, although blogs are used for much more now, like online journalism. A blog is a frequently updated online personal journal or diary. It is a place to express yourself to the world. A place to share your thoughts. A blogger is someone who blogs, or writes content for a blog. Blogging is the act of writing a post for a blog. This Software Application may consist of two types of users. Administrator: Administrator is the controller of all the users and maintaining all content in this site. User: Registered person in this site.",
             technologies: "HTML CSS JAVASCRIPT AJAX BOOTSTRAP PHP and MySQL",
-            link: "https://github.com/zohaibali123-tech/21459_Zohaib_Ali"
+            link: "https://github.com/zohaibali123-tech/21459_Zohaib_Ali",
+            link: "https://drive.google.com/file/d/1qBNYZ_ajsfR5WjJB4_pItdB5EkXqOZZv/view?usp=sharing"
         },
         {
             image: "mhbs.png",
             project_title: "Marriage Hall Booking System",
             description: "This is a booking system designed with the busy schedules during wedding times in mind. With this system, users can book a hall for their event. Additionally, they can arrange chairs according to the number of guests. If users want to manage catering as well, there are separate third-party links available for that purpose",
             technologies: "HTML CSS JAVASCRIPT BOOTSTRAP PHP and MySQL",
-            link: "https://github.com/zohaibali123-tech/MHBS"
+            link: "https://github.com/zohaibali123-tech/MHBS",
+            live: "https://drive.google.com/file/d/1dOf81kJsyxbxFgV88EqLxQ208BYcc6bQ/view?usp=sharing"
         },
         {
-            image: "groupchatapp.png",
-            project_title: "Group Chat Application",
-            description: "This is a chat application similar to WhatsApp groups, where all users can chat together in a group. The login panel is implemented, and users can log in to the chat group using their email and password. The signup feature is still pending, as well as the message editing option",
-            technologies: "HTML CSS JAVASCRIPT AJAX PHP and MySQL",
-            link: "https://github.com/zohaibali123-tech/AJAX_Chat_Application"
+            image: "authenticationlaravel.png",
+            project_title: "Admin-User Authentication CRUD System",
+            description: "Developed a secure Admin-User Authentication and CRUD system using Laravel. Implemented role-based access control with dynamic dashboards for Admin and Users. Enabled efficient user management including create, update, delete, and view functionalities. Integrated Laravel Breeze for authentication and followed MVC architecture.",
+            technologies: "HTML CSS JAVASCRIPT BOOTSTRAP jQuery Laravel and MySQL",
+            link: "https://github.com/zohaibali123-tech/MY-FIRST-PROJECT",
+            live: "https://drive.google.com/file/d/1AYCFupfZVJAxdNeljNISbBQ4cRmZUFzo/view?usp=sharing"
         }
     ];
 
@@ -213,7 +216,8 @@ $(document).ready(function () {
                         <h3>${project.project_title}</h3>
                         <p>${project.description}</p>
                         <p><strong>Technologies:</strong> ${project.technologies}</p>
-                        <a href="${project.link}" target="_blank">View Project</a>
+                        <a href="${project.link}" target="_blank">Code Project</a> | 
+                        <a href="${project.live}" target="_blank">View Project</a>
                     </div>
                 `);
             });
