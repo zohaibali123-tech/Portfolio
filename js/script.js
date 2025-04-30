@@ -179,7 +179,7 @@ $(document).ready(function () {
             description: "A blog (Short for Web log) is a type of website which has posts (or entries) appearing in reverse chronological order (the most recent post appears first). You can think of it as an online journal or diary, although blogs are used for much more now, like online journalism. A blog is a frequently updated online personal journal or diary. It is a place to express yourself to the world. A place to share your thoughts. A blogger is someone who blogs, or writes content for a blog. Blogging is the act of writing a post for a blog. This Software Application may consist of two types of users. Administrator: Administrator is the controller of all the users and maintaining all content in this site. User: Registered person in this site.",
             technologies: "HTML CSS JAVASCRIPT AJAX BOOTSTRAP PHP and MySQL",
             link: "https://github.com/zohaibali123-tech/21459_Zohaib_Ali",
-            link: "https://drive.google.com/file/d/1qBNYZ_ajsfR5WjJB4_pItdB5EkXqOZZv/view?usp=sharing"
+            live: "https://drive.google.com/file/d/1qBNYZ_ajsfR5WjJB4_pItdB5EkXqOZZv/view?usp=sharing"
         },
         {
             image: "mhbs.png",
