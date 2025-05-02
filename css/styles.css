@@ -33,35 +33,54 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* needed for responsive */
 }
 
 nav .logo h1 {
     font-size: 28px;
 }
 
-nav .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-nav .nav-links li {
+.nav-links li {
     margin: 0 15px;
     transition: transform 0.3s ease-in-out;
 }
 
-nav .nav-links li:hover{
+.nav-links li:hover {
     transform: scale(1.09);
 }
 
-nav .nav-links li a {
+.nav-links li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
-nav .nav-links li a:hover {
-    color: #1da1f2; /* Hover color */
+.nav-links li a:hover {
+    color: #1da1f2;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.toggle-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
 }
 
 /* Hero Section */
@@ -403,18 +422,32 @@ footer {
 
 /* Responsive for Navbar */
 @media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* hidden by default */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* shown when active */
+    }
+
     nav .container {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    nav .nav-links {
-        flex-direction: column;
-        width: 100%;
+    .nav-links li {
+        margin: 10px 0;
     }
 
-    nav .nav-links li {
-        margin: 10px 0;
+    .btn-primary {
+        margin-top: 10px;
     }
 }
 

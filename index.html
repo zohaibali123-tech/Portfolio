@@ -17,14 +17,15 @@
             <div class="logo">
                 <h1>My Portfolio</h1>
             </div>
-            <ul class="nav-links">
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#education-experience">Edu-Exp</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="images/ResumeZohaib.pdf" class="btn-primary">Download CV</a>
+            <a href="images/ResumeZohaib.pdf" class="btn-primary">Download Resume</a>
         </div>
     </nav>
 
@@ -125,30 +126,28 @@
 
     <script>
         emailjs.init("G795kxSkDiuzS2exM");
-    document.getElementById('send-button').addEventListener('click', function(event) {
-    event.preventDefault();  // Prevent the default form submission
+        document.getElementById('send-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            const form = document.getElementById('contact-form');
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
 
-    const form = document.getElementById('contact-form');
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                message: message
+            };
 
-    const templateParams = {
-        from_name: name,
-        from_email: email,
-        message: message
-    };
-
-    emailjs.send('service_r4uik5u', 'template_00zlmto', templateParams)
-        .then(function(response) {
-            alert('Message sent successfully!');
-            form.reset();
-        }, function(error) {
-            alert('Failed to send message: ' + error.text);
+            emailjs.send('service_r4uik5u', 'template_00zlmto', templateParams)
+            .then(function(response) {
+                alert('Message sent successfully!');
+                form.reset();
+            }, function(error) {
+                alert('Failed to send message: ' + error.text);
+            });
         });
-});
-
-</script>
+    </script>
     
 </body>
 </html>

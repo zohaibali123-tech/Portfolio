@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+}
+
 $(document).ready(function () {
 
     /*Skills Data*/
